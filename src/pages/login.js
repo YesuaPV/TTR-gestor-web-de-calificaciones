@@ -16,7 +16,7 @@ const Login = () => (
                         <input className='log-input' type="text" name="txtEmail" placeholder="Email"/>
                         <h1 className='log-semititu'>Contraseña</h1>  
                         <input className='log-input' type="password" name="txtPass" placeholder="Contraseña"/>
-                        <button className='log-boton-form'>Iniciar sesion</button>
+                        <button className='log-boton-formi'>Iniciar sesion</button>
                     </form>
                 </div>
                 <div className='log-decoration'>

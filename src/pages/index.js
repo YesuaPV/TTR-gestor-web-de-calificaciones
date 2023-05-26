@@ -31,16 +31,16 @@ const Index = () => (
                 <div className='parbotgrid'>
                  <div className='botgrid1'/>
                  <div className='botgrid2'>
-                 <div className='log-loginfo'>
+                 <div className='log-loginfoi'>
                     <div className='log-header'>
-                        <img className='log-imacos' src={IMG} alt="logo fundacion 50 + 1"/>
+                        <img className='log-imacosi' src={IMG} alt="logo fundacion 50 + 1"/>
                     </div> 
-                    <form className='log-cont-form-reg' >
-                        <h1 className='log-semititu'>Email</h1>  
+                    <form className='log-cont-form-regi' >
+                        <h1 className='log-semititui'>Email</h1>  
                         <input className='log-input' type="text" name="txtEmail" placeholder="Email"/>
-                        <h1 className='log-semititu'>Contraseña</h1>  
+                        <h1 className='log-semititui'>Contraseña</h1>  
                         <input className='log-input' type="password" name="txtPass" placeholder="Contraseña"/>
-                        <button className='log-boton-form'>Iniciar sesion</button>
+                        <button className='log-boton-formi'>Iniciar sesion</button>
                     </form>
                 </div>
 

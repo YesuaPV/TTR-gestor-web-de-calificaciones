@@ -137,6 +137,98 @@
     }
   /*--------------------GRID bajo------------ */
 
+  /*-------------------- Formulario ----------------- */
+
+  .log-loginfoi{
+    display: grid;
+    grid-template-rows: 25% 95%;
+    position: relative;
+    height: 100vh;
+    width: 60vh;
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+
+    @media screen and (max-width: 650px) {
+        height: 100%;
+        grid-template-rows: 20% 80%;
+    }
+    
+}
+
+.log-boton-formi{
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  border-radius: 200px;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  color: #3c0673;
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: #3c0673;
+    color: #fff;
+  }
+}
+
+ .log-boton-formi:hover,
+ .log-boton-formi:focus {
+   box-shadow: inset 0 -3.25em 0 0 #3c0673;
+ }
+
+  .log-semititui{
+    font-family: 'Lato', sans-serif;
+    color: rgb(14, 13, 13);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0 auto;
+    width: 100%;
+    height: 12px;
+    margin: 0.7em;
+  }
+
+
+  .log-imacosi{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+    margin-top: 50px;
+    @media screen and (max-width: 700px) {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (max-width: 480px) {
+      height: 75px;
+      width: 75px;
+    }
+  }
+
+
+  .log-cont-form-regi{
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    margin-top: 30%;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(2, 8% 10%) 12%;
+    @media screen and (max-width: 800px) {
+      margin-top: 35%;
+    }
+    @media screen and (max-width: 480px) {
+      margin-top: 0;
+      grid-template-rows: repeat(2, 16% 20%) 24%;
+    }
+  }
+/*-------------------- Formulario ----------------- */
 
 @media only screen and (max-width: 768px){
   .icones-t2{

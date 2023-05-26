@@ -42,7 +42,7 @@ function Navbar({visible, show, page}) {
                             <div className='icones shadow-box'> <AiFillHome/></div> 
                             <span>Inicio</span>
                         </Link>
-                        <Link to="/solicitudes" className={page==="Consulta" ? "nav-link-selected" : "nav-link" }>
+                        <Link to="/consultas" className={page==="Consulta" ? "nav-link-selected" : "nav-link" }>
                             <div className='icones shadow-box'> <BiSearchAlt/></div> 
                             <span>Consulta</span>
                         </Link>
