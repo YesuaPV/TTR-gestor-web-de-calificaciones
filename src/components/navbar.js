@@ -5,6 +5,8 @@ import {BiSearchAlt, BiEdit} from 'react-icons/bi';
 import {SiMicrosoftexcel} from 'react-icons/si';
 import descarga from '../images/descarga.png';
 import { NavLink } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
 import '../styles/navbar.css';
 
 function Navbar({visible, show, page}) {
@@ -36,18 +38,18 @@ function Navbar({visible, show, page}) {
                     />
                     </NavLink>
                     <div className="links nav-top">
-                        <NavLink className={page==="Dashboard" ? "nav-link-selected" : "nav-link" }>
+                        <Link to="/home" className={page==="Dashboard" ? "nav-link-selected" : "nav-link" }>
                             <div className='icones shadow-box'> <AiFillHome/></div> 
                             <span>Inicio</span>
-                        </NavLink>
-                        <NavLink className={page==="Consulta" ? "nav-link-selected" : "nav-link" }>
+                        </Link>
+                        <Link to="/solicitudes" className={page==="Consulta" ? "nav-link-selected" : "nav-link" }>
                             <div className='icones shadow-box'> <BiSearchAlt/></div> 
-                            <span>Consulta </span>
-                        </NavLink>
-                        <NavLink className={page==="Estadisticas" ? "nav-link-selected" : "nav-link" }>
+                            <span>Consulta</span>
+                        </Link>
+                        <Link to="/estadisticas" className={page==="Estadisticas" ? "nav-link-selected" : "nav-link" }>
                             <div className='icones shadow-box'> <GoGraph/></div> 
                             <span>Estadísiticas</span> 
-                        </NavLink>
+                        </Link>
                         <NavLink className={page==="Manual" ? "nav-link-selected" : "nav-link" }>                            
                             <div className='icones shadow-box'> <BiEdit/></div> 
                             <span>Ingreso manual</span> 
@@ -56,10 +58,10 @@ function Navbar({visible, show, page}) {
                             <div className='icones shadow-box'> <SiMicrosoftexcel/></div> 
                             <span>Cargar información</span> 
                         </NavLink>
-                        <NavLink className={page==="Solicitudes" ? "nav-link-selected" : "nav-link" }>                            
+                        <Link to="/solicitudes" className={page==="Solicitudes" ? "nav-link-selected" : "nav-link" }>                            
                             <div className='icones shadow-box'> <AiOutlineReconciliation/></div> 
                             <span>Solicitudes</span> 
-                        </NavLink>
+                        </Link>
                     </div>
                 </div>
             </nav>
