@@ -3,8 +3,13 @@ import Index from '../pages/index';
 
 const IndexContainer = () =>{
 
+    const scrollDown = () => {
+        window.scrollBy(0, window.innerHeight, {behavior: "smooth",});
+
+    };
+
     return(
-        <Index />
+        <Index scrollDown={scrollDown}/>
     )
 };
 
