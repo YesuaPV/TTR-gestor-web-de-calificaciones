@@ -6,6 +6,7 @@ import SolicitudesContainer from '../containers/solicitudesContainer';
 import StatisticsContainer from '../containers/statisticsContainer';
 import LoginContainer from '../containers/loginContainer';
 import ConsultasContainer from '../containers/consultasContainer'
+import MasiveContainer from '../containers/masivecharge';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/consultas" element={<ConsultasContainer />}/>
           <Route exact path="/solicitudes" element={<SolicitudesContainer />}/>
           <Route exact path="/estadisticas" element={<StatisticsContainer />}/>
+          <Route exact path="/masivecharge" element={<MasiveContainer />}/>
           <Route exact path="/login" element={<LoginContainer />}/>
         </Routes>
       </Router>

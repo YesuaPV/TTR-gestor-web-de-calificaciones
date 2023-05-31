@@ -54,10 +54,10 @@ function Navbar({visible, show, page}) {
                             <div className='icones shadow-box'> <BiEdit/></div> 
                             <span>Ingreso manual</span> 
                         </NavLink>
-                        <NavLink className={page==="Excel" ? "nav-link-selected" : "nav-link" }>                            
+                        <Link to="/masivecharge" className={page==="Excel" ? "nav-link-selected" : "nav-link" }>                            
                             <div className='icones shadow-box'> <SiMicrosoftexcel/></div> 
                             <span>Cargar información</span> 
-                        </NavLink>
+                        </Link>
                         <Link to="/solicitudes" className={page==="Solicitudes" ? "nav-link-selected" : "nav-link" }>                            
                             <div className='icones shadow-box'> <AiOutlineReconciliation/></div> 
                             <span>Solicitudes</span> 
