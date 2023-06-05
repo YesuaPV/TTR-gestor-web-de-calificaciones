@@ -7,6 +7,10 @@ import StatisticsContainer from '../containers/statisticsContainer';
 import LoginContainer from '../containers/loginContainer';
 import ConsultasContainer from '../containers/consultasContainer'
 import MasiveContainer from '../containers/masivecharge';
+import StudentFormContainer from '../containers/studentFormContainer';
+import TeacherFormContainer from '../containers/teacherFormContainer';
+import CourseFormContainer from '../containers/courseFormContainer';
+
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
           <Route exact path="/estadisticas" element={<StatisticsContainer />}/>
           <Route exact path="/masivecharge" element={<MasiveContainer />}/>
           <Route exact path="/login" element={<LoginContainer />}/>
+          <Route exact path="/new-student" element={<StudentFormContainer />}/>
+          <Route exact path="/new-course" element={<CourseFormContainer />}/>
+          <Route exact path="/new-teacher" element={<TeacherFormContainer />}/>
+
         </Routes>
       </Router>
   );
